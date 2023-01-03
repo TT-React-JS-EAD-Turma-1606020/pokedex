@@ -12,3 +12,8 @@ export const InputContainer = styled.div`
   margin-bottom: 1.5rem;
 `;
 
+export const PokemonContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+`
