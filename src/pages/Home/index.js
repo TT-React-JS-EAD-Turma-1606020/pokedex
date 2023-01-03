@@ -24,8 +24,8 @@ export const Home = () => {
       </InputContainer>
 
       <PokemonContainer>
-        {pokemon.map(data => {
-          return <Card />
+        {pokemon.map(result => {
+          return <Card key={result.name} name={result.name} url={result.url} />
         })}
       </PokemonContainer>
 

@@ -1,11 +1,15 @@
 import { Container, Image, Name } from "./styles"
 
-export const Card = ({ name, imageSrc }) => {
+export const Card = ({ name, url }) => {
+  const id = url.split('/')[6]
+
+  console.log(id)
+
   return (
     <Container>
-      <Image src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+      <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} />
 
-      <Name>Bulbasaur</Name>
+      <Name>{name}</Name>
     </Container>
   )
 }
