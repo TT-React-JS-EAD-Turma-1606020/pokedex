@@ -6,3 +6,9 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
 `;
+
+export const InputContainer = styled.div`
+  max-width: 15rem;
+  margin-bottom: 1.5rem;
+`;
+
