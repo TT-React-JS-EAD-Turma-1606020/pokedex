@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: ${black};
     color: ${white};
+    font-family: Varela, sans-serif;
   }
 
   * {
