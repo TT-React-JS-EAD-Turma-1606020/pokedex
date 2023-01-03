@@ -1,7 +1,10 @@
 import { Input } from "../../components/Input"
+import { Container } from "./styles"
 
 export const Home = () => {
   return (
-    <Input name='search' label='Busca' />
+    <Container>
+      <Input name='search' label='Busca' />
+    </Container>
   )
 }
