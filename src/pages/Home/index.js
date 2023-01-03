@@ -1,5 +1,7 @@
+import { Input } from "../../components/Input"
+
 export const Home = () => {
   return (
-    <h1>Home Page</h1>
+    <Input name='search' label='Busca' />
   )
 }
