@@ -8,8 +8,12 @@ export const Container = styled.div`
 `;
 
 export const InputContainer = styled.div`
-  max-width: 15rem;
+  max-width: 20rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 1rem;
 `;
 
 export const PokemonContainer = styled.div`
