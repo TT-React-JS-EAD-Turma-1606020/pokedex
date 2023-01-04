@@ -21,4 +21,5 @@ export const Name = styled.span`
   font-size: 16px;
   margin-top: .75rem;
   text-align: center;
+  text-transform: capitalize;
 `;
