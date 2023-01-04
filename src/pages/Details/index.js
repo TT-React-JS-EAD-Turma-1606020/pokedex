@@ -1,3 +1,4 @@
+import { Status } from "../../components/Status"
 import { Container, Image, Name, PokemonCard, StatusContainer, StatusTitle, Type } from "./styles"
 
 export const Details = () => {
@@ -14,6 +15,12 @@ export const Details = () => {
 
       <StatusContainer>
         <StatusTitle>Status</StatusTitle>
+
+        <Status />
+
+        <Status />
+
+        <Status />
       </StatusContainer>
     </Container>
   )

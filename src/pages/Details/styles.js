@@ -41,6 +41,7 @@ export const Type = styled.div`
 export const StatusContainer = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `
 export const StatusTitle = styled.span`
   display: flex;
