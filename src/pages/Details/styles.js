@@ -25,6 +25,8 @@ export const Image = styled.img`
 
 export const Name = styled.span`
   font-size: 32px;
+  text-align: center;
+  text-transform: capitalize;
 `
 
 export const Type = styled.div`
@@ -36,6 +38,7 @@ export const Type = styled.div`
   display: flex;
   justify-content: center;
   margin-top: .25rem;
+  text-transform: capitalize;
 `
 
 export const StatusContainer = styled.div`
