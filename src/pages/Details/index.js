@@ -11,6 +11,8 @@ export const Details = () => {
   const handleGetPokemon = async () => {
     const data = await getPokemonDetails(params.id)
 
+    console.log(data)
+
     setPokemon(data)
   }
 
@@ -18,15 +20,22 @@ export const Details = () => {
     handleGetPokemon()
   }, [])
 
+  if (!pokemon) {
+    return <h3>Carregando detalhes...</h3>
+  }
+
   return (
     <Container>
       <PokemonCard>
-        <Image src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="pokemon-image" />
+        <Image src={pokemon.sprites.front_default} alt="pokemon-image" />
 
-        <Name>Bulbasaur</Name>
+        <Name>{pokemon.name}</Name>
 
-        <Type>Grass</Type>
-        <Type>Poison</Type>
+        {pokemon.types.map(type => {
+          return (
+            <Type key={type.slot} >{type.type.name}</Type>
+          )
+        })}
       </PokemonCard>
 
       <StatusContainer>
