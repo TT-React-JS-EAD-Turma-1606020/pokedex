@@ -10,7 +10,8 @@ export const Container = styled.div`
 export const Label = styled.span`
   font-size: 18px;
   margin-right: 1rem;
-  width: 12rem;
+  width: 13rem;
+  text-transform: capitalize;
 `;
 
 export const StatusContainer = styled.div`
