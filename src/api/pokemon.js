@@ -5,3 +5,9 @@ export const getPokemonList = async () => {
 
   return response.data
 }
+
+export const getPokemonDetails = async (pokemonId) => {
+  const response = await api.get(`/pokemon/${pokemonId}`)
+
+  return response.data
+}
