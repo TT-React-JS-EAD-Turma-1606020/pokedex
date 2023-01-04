@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { black, gray } from '../../constants/colors';
 
 export const Container = styled.div`
-  max-width: 100rem;
   width: 100%;
+  max-width: 60rem;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
