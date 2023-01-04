@@ -8,6 +8,10 @@ export const Container = styled.div`
   padding: 0 1rem;
   display: flex;
   gap: 1rem;
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+  }
 `;
 
 export const PokemonCard = styled.div`
