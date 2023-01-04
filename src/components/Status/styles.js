@@ -8,8 +8,9 @@ export const Container = styled.div`
 `;
 
 export const Label = styled.span`
-  font-size: 24px;
+  font-size: 18px;
   margin-right: 1rem;
+  width: 12rem;
 `;
 
 export const StatusContainer = styled.div`

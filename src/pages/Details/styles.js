@@ -42,6 +42,7 @@ export const StatusContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: .75rem;
 `
 export const StatusTitle = styled.span`
   display: flex;

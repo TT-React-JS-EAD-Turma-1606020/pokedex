@@ -1,12 +1,13 @@
 import { Container, Label, StatusContainer, Value } from "./styles"
 
-export const Status = () => {
+export const Status = ({ name, value }) => {
+
   return (
     <Container>
-      <Label> HP </Label>
+      <Label>{name}</Label>
 
       <StatusContainer>
-        <Value> 20/255 </Value>
+        <Value> {value}/255 </Value>
       </StatusContainer>
     </Container>
   )

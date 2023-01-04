@@ -41,11 +41,11 @@ export const Details = () => {
       <StatusContainer>
         <StatusTitle>Status</StatusTitle>
 
-        <Status />
-
-        <Status />
-
-        <Status />
+        {pokemon.stats.map(stat => {
+          return (
+            <Status name={stat.stat.name} value={stat.base_stat} />
+          )
+        })}
       </StatusContainer>
     </Container>
   )
