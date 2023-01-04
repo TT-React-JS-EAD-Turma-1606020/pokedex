@@ -10,6 +10,7 @@ export const Container = styled.div`
   padding: 1rem;
   width: 10rem;
   height: 10rem;
+  cursor: pointer;
 `;
 
 export const Image = styled.img`
