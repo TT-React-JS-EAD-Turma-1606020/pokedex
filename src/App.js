@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
+import { Details } from "./pages/Details";
 import { Home } from "./pages/Home";
 import { GlobalStyles } from "./styles/global";
 
@@ -11,6 +12,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+
+        <Route path="/pokemon/:id" element={<Details />} />
       </Routes>
 
       <GlobalStyles />
