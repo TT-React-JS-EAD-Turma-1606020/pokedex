@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { getPokemonDetails } from "../../api/pokemon"
 import { Status } from "../../components/Status"
-import { Container, Image, Name, PokemonCard, StatusContainer, StatusTitle, Type } from "./styles"
+import { Container, Image, Name, PokemonCard, StatusContainer, StatusTitle, StatusValues, Type } from "./styles"
 
 export const Details = () => {
   const params = useParams()
@@ -41,12 +41,15 @@ export const Details = () => {
       <StatusContainer>
         <StatusTitle>Status</StatusTitle>
 
-        {pokemon.stats.map(stat => {
-          return (
-            <Status name={stat.stat.name} value={stat.base_stat} />
-          )
-        })}
+
+        <StatusValues>
+          {pokemon.stats.map(stat => {
+            return (
+              <Status name={stat.stat.name} value={stat.base_stat} />
+            )
+          })}
+        </StatusValues>
       </StatusContainer>
-    </Container>
+    </Container >
   )
 }

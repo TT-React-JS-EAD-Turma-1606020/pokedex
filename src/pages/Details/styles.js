@@ -42,11 +42,20 @@ export const StatusContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: .75rem;
 `
 export const StatusTitle = styled.span`
   display: flex;
   flex-direction: column;
   font-size: 32px;
   margin-bottom: 2rem;
+`
+
+export const StatusValues = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 `
