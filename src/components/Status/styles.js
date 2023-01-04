@@ -23,7 +23,7 @@ export const StatusContainer = styled.div`
 
 export const Value = styled.div`
   background-color: ${gray};
-  width: 50%;
+  width: ${({ width }) => width}%;
   display: flex;
   align-items: center;
   justify-content: center;
